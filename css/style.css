@@ -60,16 +60,17 @@ body {
 
 main {
     text-align: center;
-    margin: 80px auto;
+    margin: 100px auto;
 }
 
 .menu-button {
     color: #fff;
     background-color: rgba(38, 178, 221, 0.8);
     border: 1px solid #000;
-    padding: 12px 16px;
+    padding: 12px 20px;
     font-size: 1.6rem;
     cursor: pointer;
+    border-radius: 4px;
 }
 
 .menu-button:hover {
@@ -106,6 +107,7 @@ main {
 .modal-content header {
     background-color: rgba(38, 178, 221);
     color: #fff;
+    font-size: 1.2em;
     text-align: center;
     width: 100%;
     padding: 12px 0;

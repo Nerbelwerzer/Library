@@ -11,7 +11,7 @@ addButton.addEventListener('click', () => {
 });
 
 closeButton.addEventListener('click', () => {
-    modal.style.display = 'none'
+    modal.style.display = 'none';
 });
 
 function Book() {
@@ -26,7 +26,7 @@ Book.prototype.info = function() {
 }
 
 function createBook() {
-    modal.style.display = 'none'
+    modal.style.display = 'none';
 
     let book = new Book;
     console.log(bookForm.author.value)
@@ -38,7 +38,7 @@ function createBook() {
     shelf.push(book);
     localStorage.setItem("shelf", JSON.stringify(shelf));
     document.getElementById("form").reset(); 
-    displayLibrary()
+    displayLibrary();
 }
 
 function displayLibrary() {
@@ -55,8 +55,8 @@ function displayLibrary() {
     
         let bookCard = document.createElement('div');
     
-        bookCard.setAttribute('class', 'book-card')
-        bookCard.innerHTML = cardTemplate
+        bookCard.setAttribute('class', 'book-card');
+        bookCard.innerHTML = cardTemplate;
         library.appendChild(bookCard);
     }
 }
@@ -69,14 +69,14 @@ function deleteBook(index) {
 
 function markRead(index) {
     if (shelf[index].read === "Read") {
-        shelf[index].read = "Not yet read"
+        shelf[index].read = "Not yet read";
     }
     else {
-        shelf[index].read = "Read"
+        shelf[index].read = "Read";
     }
 
     localStorage.setItem("shelf", JSON.stringify(shelf));
-    displayLibrary()
+    displayLibrary();
 }
 
 displayLibrary();
