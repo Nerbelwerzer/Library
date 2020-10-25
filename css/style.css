@@ -177,7 +177,7 @@ main {
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: rgba(27, 27, 27, 0.9);
     border: 1px solid #000;
@@ -186,6 +186,17 @@ main {
     padding: 15px;
     height: 200px;
 }
+
+.author {
+    font-style: italic;
+}
+
+.read {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
 
 .del-btn {
     background-color: rgba(27, 27, 27, 0.9);
@@ -203,10 +214,16 @@ main {
     color: inherit;
     border: none;
     cursor: pointer;
+    padding-top: 5px;
+}
+
+.pages {
+    font-size: .9em
 }
 
 .book-card p:nth-child(2) {
     font-size: 1.3em;
     font-weight: 700;
+    margin-top: 10px;
 }
 

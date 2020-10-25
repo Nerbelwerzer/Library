@@ -49,9 +49,9 @@ function displayLibrary() {
         let cardTemplate = 
         `<button class="del-btn" onclick="deleteBook(` + [i] + `)">X</button>` +
         `<p>${shelf[i].title}</p>` +
-        `<p>By ${shelf[i].author}</p>` +
-        `<p>${shelf[i].pages} pages</p>` +
-        `<div><p>${shelf[i].read} <p><button class="tog-btn" onclick="markRead(` + [i] + `)">(toggle)</button> </p></div></p>`
+        `<p class="author">By ${shelf[i].author}</p>` +
+        `<p class="pages">(${shelf[i].pages} pages)</p>` +
+        `<div class="read"><p>${shelf[i].read} </p><button class="tog-btn" onclick="markRead(` + [i] + `)">(toggle)</button> </div>`
     
         let bookCard = document.createElement('div');
     
