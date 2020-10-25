@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Test</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <div id="formModal" class="modal">
+    <div class="modal-content">
+      <header>
+        <span>Add a book</span>
+      </header>
+      <form id="form" class="book-form" onsubmit="return false">
+        <div class="field-div">
+          <label for="title">
+            <p>Title:</p>
+          </label>
+          <input type="text" id="title" name="title">
+        </div>
+        <div class="field-div">
+          <label for="author">
+            <p>Author:</p>
+          </label>
+          <input type="text" id="author" name="author">
+        </div>
+        <div class="field-div">
+          <label for="pages">
+            <p>Pages:</p>
+          </label>
+          <input type="number" id="pages" name="pages">
+        </div>
+        <div>
+          <input type="radio" id="read" name="read" value="Not yet read">
+          <label for="read">Not yet read</label><br>
+          <input type="radio" id="not-read" name="read" value="Read">
+          <label for="female">Already read</label><br>
+        </div>
+        <button type="submit" value="submit" OnClick="createBook()">Add to Library</button>
+      </form>
+    </div>
+  </div>
+
+  <main>
+
+    <button id="add-button" class="menu-button">Add Book to Library</button>
+
+
+    <div id="library">
+
+    </div>
+  </main>
+
+</body>
+<script src="script/script.js"></script>
+
+</html>
