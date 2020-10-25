@@ -3,7 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <title>Test</title>
   <meta charset="UTF-8">
 </head>
@@ -13,33 +13,34 @@
     <div class="modal-content">
       <header>
         <span>Add a book</span>
+        <button id="close-btn"><i class="fas fa-times"></i></button>
       </header>
-      <form id="form" class="book-form" onsubmit="return false">
+      <form id="form" class="book-form" ">
         <div class="field-div">
           <label for="title">
             <p>Title:</p>
           </label>
-          <input type="text" id="title" name="title">
+          <input class="form-field" type="text" id="title" name="title">
         </div>
         <div class="field-div">
           <label for="author">
             <p>Author:</p>
           </label>
-          <input type="text" id="author" name="author">
+          <input class="form-field" type="text" id="author" name="author">
         </div>
         <div class="field-div">
           <label for="pages">
             <p>Pages:</p>
           </label>
-          <input type="number" id="pages" name="pages">
+          <input class="form-field" type="number" id="pages" name="pages">
         </div>
         <div>
-          <input type="radio" id="read" name="read" value="Not yet read">
+          <input type="radio" id="read" name="read" value="Not yet read" checked>
           <label for="read">Not yet read</label><br>
           <input type="radio" id="not-read" name="read" value="Read">
-          <label for="female">Already read</label><br>
+          <label for="not-read">Already read</label><br>
         </div>
-        <button type="submit" value="submit" OnClick="createBook()">Add to Library</button>
+        <button class="submit-btn" type="submit" value="submit" OnClick="createBook()">Add to Library</button>
       </form>
     </div>
   </div>
