@@ -1,11 +1,10 @@
 const shelf = JSON.parse(localStorage.getItem("shelf")) || [];
-
 const library = document.getElementById('library');
 const addButton = document.getElementById('add-button');
 const closeButton = document.getElementById('close-btn')
+const delButton = document.getElementsByClassName('del-btn')
 const modal = document.getElementById('formModal');
 const bookForm = document.getElementById('form')
-const delButton = document.getElementsByClassName('del-btn')
 
 addButton.addEventListener('click', () => {
     modal.style.display = 'block';
@@ -38,7 +37,7 @@ function createBook() {
 
     shelf.push(book);
     localStorage.setItem("shelf", JSON.stringify(shelf));
-
+    document.getElementById("form").reset(); 
     displayLibrary()
 }
 
